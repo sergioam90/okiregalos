@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oki Regalos | Tienda online y contacto</title>
+  <meta name="description" content="Oki Regalos: acceso rápido a Mercado Libre, Tienda BNA, compras por mayor, WhatsApp e Instagram.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Oki Regalos">
+  <meta name="theme-color" content="#f2b705">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Oki Regalos">
+  <meta property="og:description" content="Todos nuestros canales de compra y contacto en un solo lugar.">
+  <meta property="og:image" content="recursos/logo-oki-regalos.png">
+  <meta property="og:site_name" content="Oki Regalos">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Oki Regalos">
+  <meta name="twitter:description" content="Todos nuestros canales de compra y contacto en un solo lugar.">
+  <meta name="twitter:image" content="recursos/logo-oki-regalos.png">
+  <link rel="icon" href="recursos/favicon.ico" sizes="any">
+  <link rel="shortcut icon" href="recursos/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Oki Regalos",
+      "telephone": "+54 11 2251-7632",
+      "sameAs": [
+        "https://www.instagram.com/okiregalos.ok/",
+        "https://www.facebook.com/okiregalosoriginales",
+        "https://www.mercadolibre.com.ar/tienda/oki-regalos",
+        "https://mayoristas.okiregalos.com.ar/"
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --surface: rgba(255, 255, 255, 0.82);
+      --surface-border: rgba(35, 35, 35, 0.08);
+      --text: #161616;
+      --muted: #5f5f5f;
+      --shadow: 0 24px 80px rgba(22, 22, 22, 0.12);
+      --yellow-1: #ffe7a6;
+      --yellow-2: #f2b705;
+      --green: #25d366;
+      --radius-xl: 32px;
+      --radius-lg: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(242, 183, 5, 0.24), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(255, 231, 166, 0.55), transparent 28%),
+        linear-gradient(160deg, #f8f4ec 0%, #f2ede3 50%, #ece6da 100%);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .shell {
+      width: min(100%, 760px);
+    }
+
+    .card {
+      background: var(--surface);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      padding: 36px;
+      text-align: center;
+    }
+
+    .brand img {
+      width: min(100%, 360px);
+      height: auto;
+      display: block;
+      margin: 0 auto 24px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 28px;
+    }
+
+    .actions {
+      display: grid;
+      gap: 14px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+      padding: 18px 22px;
+      text-decoration: none;
+      color: var(--text);
+      border-radius: var(--radius-lg);
+      font-weight: 600;
+      border: 1px solid rgba(22, 22, 22, 0.08);
+      box-shadow: 0 12px 28px rgba(22, 22, 22, 0.08);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 36px rgba(22, 22, 22, 0.13);
+      border-color: rgba(22, 22, 22, 0.18);
+      outline: none;
+    }
+
+    .btn-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      text-align: left;
+      flex: 1;
+    }
+
+    .btn strong {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .btn span {
+      font-size: 0.88rem;
+      line-height: 1.4;
+      color: rgba(22, 22, 22, 0.72);
+      font-weight: 500;
+    }
+
+    .btn-icon {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.48);
+      font-size: 1.2rem;
+    }
+
+    .btn-ml,
+    .btn-bna,
+    .btn-mayor {
+      background: linear-gradient(135deg, var(--yellow-1), #fff7dd 50%, #ffe18e);
+    }
+
+    .btn-wsp {
+      background: linear-gradient(135deg, #5ae18e, var(--green));
+      color: #082312;
+    }
+
+    .btn-wsp span {
+      color: rgba(8, 35, 18, 0.8);
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .social a {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid rgba(22, 22, 22, 0.08);
+      box-shadow: 0 10px 24px rgba(22, 22, 22, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .social a:hover,
+    .social a:focus-visible {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 16px 28px rgba(22, 22, 22, 0.12);
+      outline: none;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 14px;
+      }
+
+      .card {
+        padding: 24px 18px;
+        border-radius: 24px;
+      }
+
+      .brand img {
+        width: min(100%, 280px);
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        padding: 16px 18px;
+        border-radius: 18px;
+      }
+
+      .btn strong {
+        font-size: 0.96rem;
+      }
+
+      .btn span {
+        font-size: 0.82rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="card" aria-label="Oki Regalos enlaces principales">
+      <div class="brand">
+        <img src="recursos/logo-oki-regalos.png" alt="Logo de Oki Regalos">
+      </div>
+
+      <h1>Todos nuestros canales en un solo lugar.</h1>
+
+      <nav class="actions" aria-label="Enlaces de compra y contacto">
+        <a class="btn btn-ml" href="https://www.mercadolibre.com.ar/tienda/oki-regalos" target="_blank" rel="noopener noreferrer" aria-label="Ver tienda de Oki Regalos en Mercado Libre">
+          <span class="btn-copy">
+            <strong>Ver en Mercado Libre</strong>
+            <span>Nuestro catalogo oficial para comprar online.</span>
+          </span>
+          <span class="btn-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="btn btn-bna" href="https://www.tiendabna.com.ar/catalog?sh=2104" target="_blank" rel="noopener noreferrer" aria-label="Ver tienda de Oki Regalos en Tienda BNA">
+          <span class="btn-copy">
+            <strong>Ver en Tienda BNA</strong>
+            <span>Hasta 24 cuotas sin interes.</span>
+          </span>
+          <span class="btn-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="btn btn-mayor" href="https://mayoristas.okiregalos.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Ingresar al canal mayorista de Oki Regalos">
+          <span class="btn-copy">
+            <strong>Compras por mayor</strong>
+            <span>Opciones para revendedores y negocios.</span>
+          </span>
+          <span class="btn-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="btn btn-wsp" href="https://api.whatsapp.com/send?phone=541122517632" target="_blank" rel="noopener noreferrer" aria-label="Escribir a Oki Regalos por WhatsApp">
+          <span class="btn-copy">
+            <strong>Escribinos por WhatsApp</strong>
+            <span>Consultas y pedidos directos.</span>
+          </span>
+          <span class="btn-icon" aria-hidden="true">💬</span>
+        </a>
+      </nav>
+
+      <div class="social" aria-label="Redes sociales de Oki Regalos">
+        <a href="https://www.instagram.com/okiregalos.ok/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Oki Regalos">◎</a>
+        <a href="https://www.facebook.com/okiregalosoriginales" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Oki Regalos">f</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
